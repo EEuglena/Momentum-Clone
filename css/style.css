@@ -22,6 +22,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	width: 100vw;
 	height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -55,19 +56,19 @@ h1 {
 
 #weather {
 	position: absolute;
-	top: 10px;
-	right: 10px;
+	top: 2vh;
+	right: 2vw;
 	filter: drop-shadow(3px 3px 5px rgba(128, 128, 128, 1));
 }
 
 #weather img {
-	margin: -10px 0;
-	height: 50px;
+	margin: -15px 0;
+	height: 6vh;
 }
 
 #weather p:first-child {
 	position: absolute;
-	top: 0px;
+	top: 0;
 	right: 0;
 	display: flex;
 	flex-direction: row;
@@ -79,7 +80,7 @@ h1 {
 
 #weather p:last-child {
 	position: absolute;
-	top: 50px;
+	top: 5vh;
 	right: 0;
 	text-align: right;
 	margin: -15px 0;
