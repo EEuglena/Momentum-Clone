@@ -1,0 +1,158 @@
+@font-face {
+	font-family: "UbuntuB";
+	src: url("../fonts/ubuntu/Ubuntu-B.ttf") format("truetype");
+}
+@font-face {
+	font-family: "UbuntuR";
+	src: url("../fonts/ubuntu/Ubuntu-R.ttf") format("truetype");
+}
+
+.hidden {
+	display: none;
+}
+
+* {
+	color: white;
+	font-family: "UbuntuB";
+}
+
+body {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1 {
+	position: absolute;
+	font-size: 5vh;
+	top: 25vh;
+}
+
+#login-form {
+	position: absolute;
+	top: 25vh;
+	margin: 0;
+}
+
+#login-form input {
+	background: none;
+	border: none;
+	border-bottom: 1px solid rgba(128, 128, 128, 1);
+	font-family: "UbuntuR";
+	font-size: 4vh;
+	padding: 15px 30px;
+	text-align: center;
+}
+
+#login-form input:focus {
+	outline: none;
+}
+
+#weather {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	filter: drop-shadow(3px 3px 5px rgba(128, 128, 128, 1));
+}
+
+#weather img {
+	margin: -10px 0;
+	height: 50px;
+}
+
+#weather p:first-child {
+	position: absolute;
+	top: 0px;
+	right: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	font-size: 3vh;
+}
+
+#weather p:last-child {
+	position: absolute;
+	top: 50px;
+	right: 0;
+	text-align: right;
+	margin: -15px 0;
+	font-size: 2vh;
+}
+
+#clock {
+	position: fixed;
+	margin: 0;
+	top: 33vh;
+	font-size: 12vh;
+}
+
+#todo-form {
+	position: absolute;
+	top: 50vh;
+}
+
+#todo-form input {
+	background: none;
+	color: white;
+	border: none;
+	border-bottom: 1px solid rgba(128, 128, 128, 1);
+	font-family: "UbuntuR";
+	font-size: 2vh;
+	text-align: center;
+	padding: 10px 0;
+}
+
+#todo-form input::placeholder {
+	color: rgba(255, 255, 255, 0.5);
+	font-family: "UbuntuB";
+}
+#todo-form input:focus {
+	outline: none;
+}
+
+#todo-list {
+	width: 32vw;
+	position: absolute;
+	top: 55vh;
+	font-size: 2vh;
+}
+
+#todo-list button {
+	margin: 0 5px;
+	padding: 2px;
+	background: none;
+	border: none;
+	border-radius: 5px;
+}
+
+#todo-list button:hover {
+	background: rgba(255, 157, 157, 0.5);
+	transition: all 0.5s;
+}
+
+#quote {
+	position: absolute;
+	bottom: 2vh;
+	padding: 0;
+	text-shadow: 2px 2px rgba(0, 0, 0, 1);
+}
+
+#quote p {
+	text-align: center;
+	margin: 10px 0;
+}
+
+#quote p:first-child {
+	font-size: 4vh;
+}
+
+#quote p:last-child {
+	font-size: 2vh;
+}
